@@ -29,8 +29,8 @@ def stampaj_spisak():
         if fakultet:
             if student_lista[4].lower() == fakultet.lower():
                 lista_lista_svih_studenata.append(student_lista_stampa)
-        else:
-            lista_lista_svih_studenata.append(student_lista_stampa)
+            else:
+                lista_lista_svih_studenata.append(student_lista_stampa)
 
     stampaj_tabelu(lista_lista_svih_studenata, ["Br. Indexa",
                                                 "Ime",
