@@ -29,8 +29,8 @@ def stampaj_spisak():
         if fakultet:
             if student_lista[4].lower() == fakultet.lower():
                 lista_lista_svih_studenata.append(student_lista_stampa)
-            else:
-                lista_lista_svih_studenata.append(student_lista_stampa)
+        else:
+            lista_lista_svih_studenata.append(student_lista_stampa)
 
     stampaj_tabelu(lista_lista_svih_studenata, ["Br. Indexa",
                                                 "Ime",
@@ -112,7 +112,7 @@ while True:
     print(" 1 - Stampaj listu studenata")
     print(" 2 - Dodaj novog studenta")
     print(" 3 - Obrisi studenta")
-    print(" 4 - Suspenduj studenta")
+    print(" 4 - Izlaz")
     print("=============================")
     komanda = str(input("Unesite zeljenu komandu: "))
     print("\n\n")
@@ -123,6 +123,8 @@ while True:
         dodaj_studenta()
     elif komanda == "3":
         obrisi_studenta()
+    elif komanda=="0":
+        quit()
 
     #SUSPENDUJ STUDENTA
 
