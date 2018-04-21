@@ -114,7 +114,7 @@ while True:
     print(" 3 - Obrisi studenta")
     print(" 4 - Izlaz")
     print("=============================")
-    komanda = str(input("Unesite zeljenu komandu: "))
+    komanda = raw_input("Unesite zeljenu komandu: ")
     print("\n\n")
 
     if komanda == "1":
@@ -123,7 +123,7 @@ while True:
         dodaj_studenta()
     elif komanda == "3":
         obrisi_studenta()
-    elif komanda=="0":
+    elif komanda=="4":
         quit()
 
     #SUSPENDUJ STUDENTA
